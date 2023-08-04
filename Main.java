@@ -3,78 +3,85 @@ import java.util.Scanner;
 
                 public class Main {
                     public static void main(String[] args) {
-                        Scanner scan = new Scanner(System.in);
-
-                        University university = new University();
-                        Object[] univer = new Object[4];
-                        School school = new School();
-                        Object[] schools = new Object[3];
-                        Person person = new Person();
-                        Object[] persons = new Object[2];
-                        Car car = new Car();
-                        Object[] cars = new Object[4];
-
-
-
-                                    univer[0] = university.setNameUniver("Manas");
-                                    univer[1] = university.setDatafoundation(1995);
-                                    univer[2] = university.setOrintion("Engineering");
-                                    univer[3] = person.setName("Asan");
-                                    for (int i = 0; i < univer.length; i++) {
-                                        System.out.println("=============================================");
-                                        System.out.println("*|UNIVERSITY|*:");
-                                        System.out.println("Name: " + university.getNameUniver());
-                                        System.out.println("Based: " + university.getDatafoundation());
-                                        System.out.println("Orintion: " + university.getOrintion());
-                                        System.out.println("Mentor: " + person.getName());
-                                        System.out.println("=============================================");
-break;
-                                    }
-
-                                    // SCHOL
-                                    schools[0] = school.setNumberSchool(24);
-                                    schools[1] = school.setQuantityStudents(200);
-
-                                    schools[2] = person.setName("Asan");
-                                    for (int i = 0; i < schools.length; i++) {
-                                        System.out.println("=============================================");
-                                        System.out.println("*|SCHOOL|*:");
-                                        System.out.println("Number school: " + school.getNumberSchool());
-                                        System.out.println("Quantity of students: " + school.getQuantityStudents());
-                                        System.out.println("Mentor: " + person.getName());
-                                        System.out.println("=============================================");
-                                        break;
-                                    }
-
-
-                                    // PERSON
-                                    persons[0] = person.setName("Tunuk");
-                                    persons[1] = person.setAge(15);
-                                    for (int i = 0; i < persons.length; i++) {
-                                        System.out.println("=============================================");
-                                        System.out.println("*|PERSON|*:");
-                                        System.out.println("Name: " + person.getName());
-                                        System.out.println("Age: " + person.getAge());
-                                        System.out.println("=============================================");
-                                        break;
-                                    }
-                                    // CAR
-                                    cars[0] = person.setName("Carol");
-                                    cars[1] = car.setBrand("Honda");
-                                    cars[2] = car.setNumber(5915);
-                                    cars[3] = car.setSpeed(100);
-                                    for (int i = 0; i < cars.length; i++) {
-                                        System.out.println("=============================================");
-                                        System.out.println("*|SCHOOL|*:");
-                                        System.out.println("Driver name: " + car.getName());
-                                        System.out.println("Brand: " + car.getBrand());
-                                        System.out.println("Car number: " + car.getNumber());
-                                        System.out.println("Speed: " + car.getSpeed());
-                                        System.out.println("=============================================");
-                                        break;
-                                    }
-                            }
+Car car0=new Car();
+Car car1=new Car();
+Car car2=new Car();
+car0.setNumber(1238);
+car1.setNumber(1850);
+car2.setNumber(1923);
+car0.setName("HONDA");
+car1.setName("Tayota");
+car2.setName("BMW");
+car0.setPrice(10000);
+car1.setPrice(20000);
+car2.setPrice(30000);
+Car [] cars={car0,car1,car2};
+                        for (int i = 0; i < cars.length; i++) {
+                            System.out.println("Name:" + cars[i].getName() + " Price:" + cars[i].getPrice() + " Number:" + cars[i].getNumber());
                         }
+                            System.out.println("----------------------------------------------------");
+
+                        Person person0=new Person();
+                        Person person1=new Person();
+                        Person person2=new Person();
+                        person0.setName("Tunuk");
+                        person1.setName("Alina");
+                        person2.setName("Farida");
+                        person0.setAge(15);
+                        person1.setAge(21);
+                        person2.setAge(20);
+                        Person []people={person0,person1,person2};
+                        for (int i = 0; i < people.length; i++) {
+                            System.out.println("Name:" + people[i].getName() + " Age:" + people[i].getAge());
+                        }
+                            System.out.println("-----------------------------------------------------------");
+
+
+                        School School0=new School();
+                        School School1=new School();
+                        School School2=new School();
+                        School0.setNumberSchool(24);
+                        School1.setNumberSchool(12);
+                        School2.setNumberSchool(18);
+                        School0.setQuantityStudents(150);
+                        School1.setQuantityStudents(218);
+                        School2.setQuantityStudents(290);
+                        School []schools={School0,School1,School2};
+                        for (int i = 0; i < people.length; i++) {
+                            System.out.println("Name:" + schools[i].getNumberSchool() + " quantity:" + schools[i].getQuantityStudents());
+                        }
+                            System.out.println("-------------------------------------------------------------");
+
+
+                        University University0=new University();
+                        University University1=new University();
+                        University University2=new University();
+                        University0.setNameUniver("Manas");
+                        University1.setNameUniver("Ala-Too");
+                        University2.setNameUniver("AUCA");
+                        University0.setDatafoundation(1995);
+                        University1.setDatafoundation(1990);
+                        University2.setDatafoundation(2010);
+                        University []people1={University0,University1,University2};
+                        for (int i = 0; i < people.length; i++) {
+                            System.out.println("Name:" + people1[i].getNameUniver() + " Year:" + people1[i].getDatafoundation());
+
+                        }
+                            System.out.println("---------------------------------------------------------------------------");
+
+
+
+
+                    }
+                        }
+
+
+
+
+
+
+
+
 
 
 
